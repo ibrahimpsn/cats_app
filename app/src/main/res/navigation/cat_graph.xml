@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cat_graph"
+    app:startDestination="@id/catListFragment">
+
+    <fragment
+        android:id="@+id/catListFragment"
+        android:name="com.ibrahimpesen.catsapp.view.CatListFragment"
+        android:label="fragment_cat_list"
+        tools:layout="@layout/fragment_cat_list" >
+        <action
+            android:id="@+id/action_catListFragment_to_catDetailFragment"
+            app:destination="@id/catDetailFragment" />
+        <action
+            android:id="@+id/action_catListFragment_to_catFavFragment"
+            app:destination="@id/catFavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catDetailFragment"
+        android:name="com.ibrahimpesen.catsapp.view.CatDetailFragment"
+        android:label="fragment_cat_detail"
+        tools:layout="@layout/fragment_cat_detail" >
+        <action
+            android:id="@+id/action_catDetailFragment_to_catListFragment"
+            app:destination="@id/catListFragment" />
+        <argument
+            android:name="catId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/catFavFragment"
+        android:name="com.ibrahimpesen.catsapp.view.CatFavFragment"
+        android:label="CatFavFragment" >
+        <action
+            android:id="@+id/action_catFavFragment_to_catListFragment"
+            app:destination="@id/catListFragment" />
+    </fragment>
+</navigation>

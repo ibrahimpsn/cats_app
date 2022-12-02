@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:context=".view.CatDetailFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_arrow_back_24">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tvCatName"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Kedi Türü"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_weight="3"
+                >
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_star_border_24">
+
+                </ImageView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivCat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:minHeight="200dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_launcher_background">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textColor="#F3EBEB"
+                android:hint="dsfjkd jkls daflk sfdkjlsdafkjdasflk jkasdfjklasdjkljsdaf ">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Origin:"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/tvOrigin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:text="Origin"
+
+                android:textSize="25sp"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:text="Wikipedia Url:"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/tvWikipedia"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:text="www.wikipedia.com"
+                android:textSize="25sp"
+
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Life Span:"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/tvLifeSpan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:text="Life Span"
+                android:textSize="25sp"
+
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Dog Friendly"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/tvDogFriendly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="11"
+                android:text="Dog Friendly"
+                android:textSize="25sp"
+
+
+                >
+
+            </TextView>
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:id="@+id/btnTurkishTranslate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/turkish"
+                android:layout_weight="1"
+                >
+
+            </ImageView>
+            <ImageView
+                android:id="@+id/btnEnglishTranslate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/english"
+                android:layout_weight="1"
+                >
+
+            </ImageView>
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>
